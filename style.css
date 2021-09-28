@@ -2,7 +2,12 @@
     box-sizing: border-box;
   }
 
+html {
+    height: 100%;
+}
+
 body {
+    position: relative;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -10,6 +15,8 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #ffffff;
+    min-height: 100%;
+    padding-bottom: 6rem;
 }
 
 header {
@@ -75,6 +82,19 @@ section:not(:last-child) {
 
 #submit {
     flex-basis: 20%;
+    border: none;
+    background-color: rgb(65, 65, 65);
+    color: white;
+    border-radius: 5px;
+    min-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+#submit:hover {
+    background-color: rgb(83, 83, 83);
 }
 
 #current-tasks, #completed-tasks {
@@ -122,17 +142,28 @@ ul {
 }
 
 .delete-button {
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 10px;
     margin-right: 10px;
     font-size: 1.3rem;
+    transition: color 0.4s ease;
 }
 
 .delete-button:hover {
-    color: red;
+    color: tomato;
     cursor: pointer;
+}
+
+footer {
+    position:absolute;
+    bottom:0%;
+    width: 100%;
+    font-size: 0.8em;
+    color: #5a5a5a;
+    text-align: center;
 }
 
 @media screen and (max-width: 900px) {
@@ -153,5 +184,13 @@ ul {
     }
     .task {
         width: 95%
+    }
+    #add-task form {
+        flex-direction: column;
+        gap: 15px;
+    }
+    #submit {
+        width: 50%;
+        align-self: center;
     }
 }
