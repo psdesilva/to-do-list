@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
     <script defer src="main.js"></script>
     <title>Document</title>
 </head>
@@ -13,22 +16,23 @@
         <h1>
             To-do List
         </h1>
+        <p>Type name and click "Add Task" to add a task. Double-click on task to mark as complete. Click "X" to delete task.</p>
     </header>
     <main id="container">
         <section id="add-task">
-            <h1>Add Task</h1>
+            <h1 class="section-title">Add Task</h1>
             <form>
                 <input type="text" id="task-name">
                 <button type="submit" id="submit">Add</button>
             </form>
         </section>
         <section id="current-tasks">
-            <h1>Current Tasks</h1>
+            <h1 class="section-title">Current Tasks</h1>
             <p id="no-current-tasks">No Current Tasks to Display</p>
             <ul id="current-task-list"></ul>
         </section>
         <section id="completed-tasks">
-            <h1>Completed Tasks</h1>
+            <h1 class="section-title">Completed Tasks</h1>
             <p id="no-completed-tasks">No Completed Tasks to Display</p>
             <ul id="completed-task-list"></ul>
         </section>
