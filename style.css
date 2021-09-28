@@ -134,3 +134,24 @@ ul {
     color: red;
     cursor: pointer;
 }
+
+@media screen and (max-width: 900px) {
+    header {
+        width: 80%
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #container {
+        width: 80%
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 14px;
+    }
+    .task {
+        width: 95%
+    }
+}
